@@ -5,8 +5,8 @@ Can still use Google for search results if your search begins with "g" + space a
 
 ### Example Use
 
-In the omnibox typing
-`why is the sky blue` will direct to perplexity.ai and it will answer your question.
+In the omnibox typing  
+`why is the sky blue` will direct to perplexity.ai and it will answer your question.  
 `g why is the sky blue` will direct to google.com and give you search results.
 
 Also has a right click context menu to search via perplexity or Google.
