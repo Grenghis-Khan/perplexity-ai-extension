@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Perplexity Default Search",
+  "name": "Perplexity Search",
   "version": "1.0",
   "description": "Makes Perplexity AI the default search with option for Google",
   "permissions": ["tabs", "contextMenus"],
