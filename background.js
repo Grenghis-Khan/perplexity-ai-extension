@@ -5,28 +5,15 @@ chrome.runtime.onInstalled.addListener(() => {
     title: 'Search Perplexity AI for "%s"',
     contexts: ["selection"],
   });
-
-  chrome.contextMenus.create({
-    id: "searchGoogle",
-    title: 'Search Google for "%s"',
-    contexts: ["selection"],
-  });
 });
 
 // Handle context menu clicks
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-  if (info.menuItemId === "searchPerplexity") {
-    chrome.tabs.create({
-      url: `https://www.perplexity.ai/?q=${encodeURIComponent(
-        info.selectionText
-      )}`,
-    });
-  } else if (info.menuItemId === "searchGoogle") {
-    chrome.tabs.create({
-      url: `https://www.google.com/search?q=${encodeURIComponent(
-        info.selectionText
-      )}&source=perplexity_redirect`,
-    });
+  if (info.menuItemId === "searchPerplexity" && info.selectionText) {
+    const url = `https://www.perplexity.ai/search?q=${encodeURIComponent(
+      info.selectionText
+    )}`;
+    chrome.tabs.create({ url });
   }
 });
 
