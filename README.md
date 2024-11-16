@@ -12,7 +12,7 @@ In the omnibox typing
 Also has a right click context menu to search via perplexity or Google.
 ![right click menu](images/right-click-menu.png)
 
-## Instalation
+## Installation
 
 Download the folder, go to [chrome://extensions/](chrome://extensions/) and at the top right of the screen toggle **Developer mode** on and then on the left side of the window click **Load unpacked**.
 Upload the folder and you will be notified the extension is enabled.
